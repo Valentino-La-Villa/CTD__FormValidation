@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="formularioDeRegistro" action="">
+
+        <h2>Formulario de registro</h2>
+
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" autocomplete="off">
+        <p class="error" id="errorNombre"></p>
+
+        <label for="apellido">Apellido: </label>
+        <input type="text" id="apellido" name="apellido" autocomplete="off">
+        <p class="error" id="errorApellido"></p>
+
+        <label for="dni">Número de Documento: </label>
+        <input type="text" id="dni" name="dni" minlength="3" autocomplete="off">
+        <p class="error" id="errorDni"></p>
+
+        <label for="direccionDeCorreo">Email: </label>
+        <input type="email" id="direccionDeCorreo" name="direccionDeCorreo">
+        <p class="error" id="errorDireccionDeCorreo"></p>
+
+        <label for="edad">Edad: </label>
+        <input type="number" id="edad" name="edad" autocomplete="off">
+        <p class="error" id="errorEdad"></p>
+
+        <label for="actividad">Actividad:</label>
+        <select name="actividad" id="actividad">
+            <option value="">Seleccione...</option>
+            <option value="Futbol">Futbol</option>
+            <option value="Basket">Basket</option>
+            <option value="Tennis">Tennis</option>
+            <option value="Volley">Volley</option>
+        </select>
+        <p class="error" id="errorActividad"></p>
+
+        <label for="educacion">Nivel de estudio: </label>
+        <select name="educacion" id="educacion">
+            <option value="">Seleccione... </option>
+            <option value="Terciario">Terciario </option>
+            <option value="Universitario incompleto">Universitario incompleto </option>
+            <option value="Universitario completo">Universitario completo </option>
+            <option value="Posgrado">Posgrado </option>
+            <option value="Doctorado">Doctorado </option>
+        </select>
+        
+        <p class="error" id="errorEducacion"></p>
+
+        <label class="inline">
+            <input type="checkbox" name="terminosYCondiciones" id="terminosYCondiciones">
+            Acepto los términos y condiciones
+        </label>
+        <p class="error" id="errorTerminosYCondiciones"></p>
+
+        <input type="checkbox" name="publicidad" id="ofertas" value="ofertas">
+        <label class="inline" for="ofertas">Ofertas</label>
+
+        <input type="checkbox" name="publicidad" id="novedades" value="novedades">
+        <label class="inline" for="novedades">Novedades</label>
+
+        <br>
+
+        <input type="submit" value="Registrarse">
+
+
+    </form>
+
+    
+</body>
+<script src="./script.js"></script>
+</html>
